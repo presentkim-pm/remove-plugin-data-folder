@@ -1,7 +1,7 @@
 ---
 name: remove-plugin-data-dir-trait
 antigen: kim\present\traits\removeplugindatadir
-version: 0.0.0
+version: 1.0.0
 api: 4.0.0
 authors: [ "PresentKim" ]
 description: "Traits to remove unused plugin data directory"

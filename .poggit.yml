@@ -1,0 +1,9 @@
+branches:
+  - main
+projects:
+  remove-plugin-data-dir-trait:
+    model: virion
+    type: library
+    lint:
+      phpstan: false
+...
