@@ -26,23 +26,22 @@ declare(strict_types=1);
 
 namespace kim\present\removeplugindatafolder;
 
-use pocketmine\plugin\Plugin;
+use pocketmine\plugin\PluginBase;
 
-use function count;
-use function file_exists;
-use function is_dir;
-use function rmdir;
-use function scandir;
+/** This trait override most methods in the {@link PluginBase} abstract class. */
+trait NoDataFolderPluginTrait{
+	/** Trying remove empty data dir on plugin load */
+	protected function onLoad() : void{
+		PluginDataFolderEraser::erase($this);
+	}
 
-final class PluginDataFolderRemover{
-	public static function run(Plugin $plugin) : void{
-		$dataFolder = $plugin->getDataFolder();
-		if(
-			file_exists($dataFolder) // If the data folder exists
-			&& is_dir($dataFolder) // And it's a directory
-			&& count(scandir($dataFolder)) === 2 // And it contains only the . and .. folders
-		){
-			rmdir($dataFolder); // Remove the data folder
-		}
+	/** Trying remove empty data dir on plugin enable */
+	protected function onEnable() : void{
+		PluginDataFolderEraser::erase($this);
+	}
+
+	/** Trying remove empty data dir on plugin disable */
+	protected function onDisable() : void{
+		PluginDataFolderEraser::erase($this);
 	}
 }
