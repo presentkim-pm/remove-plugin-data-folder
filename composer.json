@@ -1,0 +1,18 @@
+{
+    "name": "presentkim/remove-plugin-data-folder",
+    "description": "Library to remove data folder that isn't used by the plugin",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "pocketmine/pocketmine-mp": "^5.0.0"
+    },
+    "autoload": {
+        "psr-4": {"kim\\present\\lib\\remove-plugin-data-folder\\": ["src/kim/present/lib/remove-plugin-data-folder/"]}
+    },
+    "extra": {
+        "virion": {
+            "spec": "3.0",
+            "namespace-root": "kim\\present\\lib\\remove-plugin-data-folder"
+        }
+    }
+}
