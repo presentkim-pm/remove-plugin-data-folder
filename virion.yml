@@ -1,8 +1,8 @@
 ---
 name: remove-plugin-data-folder
-antigen: kim\present\lib\removeplugindatafolder
+antigen: kim\present\removeplugindatafolder
 version: 1.1.0
 api: 5.0.0
 author: PresentKim
-description: "Library to remove data folder that isn't used by the plugin"
+description: "Provides utils for remove data folder that isn't used by the plugin"
 ...
