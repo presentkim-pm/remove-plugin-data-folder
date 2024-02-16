@@ -1,8 +1,8 @@
 ---
-name: remove-plugin-data-dir-trait
-antigen: kim\present\traits\removeplugindatadir
+name: remove-plugin-data-folder
+antigen: kim\present\lib\removeplugindatafolder
 version: 1.0.0
 api: 4.0.0
-authors: [ "PresentKim" ]
-description: "Traits to remove unused plugin data directory"
+author: PresentKim
+description: "Library to remove data folder that isn't used by the plugin"
 ...
