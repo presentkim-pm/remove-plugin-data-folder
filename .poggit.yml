@@ -3,7 +3,6 @@ branches:
   - main
 projects:
   remove-plugin-data-folder:
-    projectId: 11078
     model: virion
     type: library
     lint:
