@@ -1,18 +1,18 @@
 {
-    "name": "presentkim/remove-plugin-data-folder",
-    "description": "Provides utils for remove data folder that isn't used by the plugin for PocketMine-MP",
-    "type": "library",
-    "license": "MIT",
-    "require": {
-        "pocketmine/pocketmine-mp": "^5.0.0"
-    },
-    "autoload": {
-        "psr-4": {"kim\\present\\remove-plugin-data-folder\\": ["src/kim/present/remove-plugin-data-folder/"]}
-    },
-    "extra": {
-        "virion": {
-            "spec": "3.0",
-            "namespace-root": "kim\\present\\remove-plugin-data-folder"
-        }
+  "name": "presentkim/remove-plugin-data-folder",
+  "description": "Provides utils for remove data folder that isn't used by the plugin for PocketMine-MP",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "pocketmine/pocketmine-mp": "^5.0.0"
+  },
+  "autoload": {
+    "psr-4": {"kim\\present\\removeplugindatafolder\\": ["src/kim/present/removeplugindatafolder/"]}
+  },
+  "extra": {
+    "virion": {
+      "spec": "3.0",
+      "namespace-root": "kim\\present\\removeplugindatafolder"
     }
+  }
 }

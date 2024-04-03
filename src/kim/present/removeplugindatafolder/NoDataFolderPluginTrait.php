@@ -30,18 +30,19 @@ use pocketmine\plugin\PluginBase;
 
 /** This trait override most methods in the {@link PluginBase} abstract class. */
 trait NoDataFolderPluginTrait{
-	/** Trying remove empty data dir on plugin load */
-	protected function onLoad() : void{
-		PluginDataFolderEraser::erase($this);
-	}
 
-	/** Trying remove empty data dir on plugin enable */
-	protected function onEnable() : void{
-		PluginDataFolderEraser::erase($this);
-	}
+    /** Trying remove empty data dir on plugin load */
+    protected function onLoad() : void{
+        PluginDataFolderEraser::erase($this);
+    }
 
-	/** Trying remove empty data dir on plugin disable */
-	protected function onDisable() : void{
-		PluginDataFolderEraser::erase($this);
-	}
+    /** Trying remove empty data dir on plugin enable */
+    protected function onEnable() : void{
+        PluginDataFolderEraser::erase($this);
+    }
+
+    /** Trying remove empty data dir on plugin disable */
+    protected function onDisable() : void{
+        PluginDataFolderEraser::erase($this);
+    }
 }

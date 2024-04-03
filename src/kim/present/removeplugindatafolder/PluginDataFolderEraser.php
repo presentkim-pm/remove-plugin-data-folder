@@ -35,14 +35,15 @@ use function rmdir;
 use function scandir;
 
 final class PluginDataFolderEraser{
-	public static function erase(Plugin $plugin) : void{
-		$dataFolder = $plugin->getDataFolder();
-		if(
-			file_exists($dataFolder) // If the data folder exists
-			&& is_dir($dataFolder) // And it's a directory
-			&& count(scandir($dataFolder)) === 2 // And it contains only the . and .. folders
-		){
-			rmdir($dataFolder); // Remove the data folder
-		}
-	}
+
+    public static function erase(Plugin $plugin) : void{
+        $dataFolder = $plugin->getDataFolder();
+        if(
+            file_exists($dataFolder) // If the data folder exists
+            && is_dir($dataFolder) // And it's a directory
+            && count(scandir($dataFolder)) === 2 // And it contains only the . and .. folders
+        ){
+            rmdir($dataFolder); // Remove the data folder
+        }
+    }
 }

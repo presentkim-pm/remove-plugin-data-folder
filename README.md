@@ -23,36 +23,48 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
-:heavy_check_mark: Provides util function for remove data folder  
-  - `kim\present\removeplugindatafolder\PluginDataFolderEraser::erase()`  
 
-:heavy_check_mark: Provides PluginBase trait for remove data folder  
-  - `kim\present\removeplugindatafolder\NoDataFolderPluginTrait`
+## About The Project
+
+:heavy_check_mark: Provides util function for remove data folder
+
+- `kim\present\removeplugindatafolder\PluginDataFolderEraser::erase()`
+
+:heavy_check_mark: Provides PluginBase trait for remove data folder
+
+- `kim\present\removeplugindatafolder\NoDataFolderPluginTrait`
 
 -----
 
 ## Installation
+
 See [Official Poggit Virion Documentation](https://github.com/poggit/support/blob/master/virion.md)
 
 -----
 
 ## How to use?
+
 See [Main Document](https://github.com/presentkim-pm/remove-plugin-data-folder/blob/main/docs/README.md)
 
 -----
 
 ## License
+
 Distributed under the **MIT**. See [LICENSE][license-url] for more information
 
 
 [poggit-ci-badge]: https://poggit.pmmp.io/ci.shield/presentkim-pm/remove-plugin-data-folder/remove-plugin-data-folder?style=for-the-badge
+
 [stars-badge]: https://img.shields.io/github/stars/presentkim-pm/remove-plugin-data-folder.svg?style=for-the-badge
+
 [license-badge]: https://img.shields.io/github/license/presentkim-pm/remove-plugin-data-folder.svg?style=for-the-badge
 
 [poggit-ci-url]: https://poggit.pmmp.io/ci/presentkim-pm/remove-plugin-data-folder/remove-plugin-data-folder
+
 [stars-url]: https://github.com/presentkim-pm/remove-plugin-data-folder/stargazers
+
 [issues-url]: https://github.com/presentkim-pm/remove-plugin-data-folder/issues
+
 [license-url]: https://github.com/presentkim-pm/remove-plugin-data-folder/blob/main/LICENSE
 
 [project-icon]: https://raw.githubusercontent.com/presentkim-pm/remove-plugin-data-folder/main/assets/icon.png
