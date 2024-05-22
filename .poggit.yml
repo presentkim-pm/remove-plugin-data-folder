@@ -3,6 +3,7 @@ branches:
   - main
 projects:
   remove-plugin-data-folder:
+    path: ""
     model: virion
     type: library
     lint:
